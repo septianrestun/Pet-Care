@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+:root{
+    --main-color: #87AAAA;
+    --second-color: #F6D7A7;
+
+    --heading-font : 'Pacifico', open sans;
+    --main-font: 'Roboto', open sans;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    overflow-x: hidden;
+    background: var(--second-color)
+}
+
+container{
+    max-width: 1500px;
+}
+/* Header Navigasi */
+
+
+.nav-wrapper{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--main-color);
+    
+}
+
+.navbar .nav-wrapper{
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.nav-wrapper .logo{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin: 20px;
+   
+}
+
+.nav-wrapper .logo a{
+    text-decoration: none;
+    font-family: var(--heading-font);
+   font-size: xx-large;
+   color: white;
+}
+
+.nav-wrapper .menu-wrapper .menu {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-right: 20px;
+}
+
+
+.nav-wrapper .menu-list{
+    display: inline;
+    margin: 20px;
+}
+
+.nav-wrapper .menu-list a{
+    text-decoration: none;
+    font-family: var(--main-font);
+    color: white;
+}
+
+.nav-wrapper .btnBookNow{
+    border: 1px solid white;
+    padding: 10px 15px;
+    border-radius: 50px;
+    font-family: var(--main-font);
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-wrapper .menu-toggle{
+    display: none;
+}
+/* End Header Navigasi */
+
+    /* Home Section */
+
+    .home{
+        background-color: var(--main-color);
+        padding: 100px 0 100px 0;
+    }
+
+    .home .home-wrapper{
+        display: flex;
+        justify-content: space-between;
+        font-family: var(--main-font);
+    }
+
+    .home-wrapper .content-left{
+        flex: 0 0 50%;
+        margin-left: 20px;
+        margin-right: 10%;
+    }
+
+    .content-left .row-cta{
+        margin-top: 20%;
+    }
+
+
+    .content-right .row-img{
+        max-width: 500px;
+    }
+    .content-right .row-img img{
+        width: 100%;
+    }
+
+    .row-cta .welcome{
+        margin-bottom: 20px;
+    }
+
+    .row-cta .content-copy{
+        font-weight: 700;
+        line-height: 2rem;
+    }
+
+    .row-cta .cta-btn{
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    .row-cta .cta-booking{
+        background-color: var(--second-color);
+        font-weight: 700;
+        color: black;
+        padding: 10px 20px;
+        border-style: none;
+        border-radius: 20px;
+        text-decoration: none;
+    }
+
+    
+    /* End Home */
+
+/* About Section */
+.about .about-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--second-color);
+    font-family: var(--main-font);
+}
+
+.about-wrapper .content-left{
+    position: relative;
+    padding-top: 100px;
+    margin-left: 20px;
+    flex: 0 0 50%;
+}
+
+.container-left .row-img{
+    max-width: 500px;
+}
+
+.content-left .row-img img{
+    width: 100%;
+}
+
+.about-wrapper .content-right{
+    position: relative;
+    margin-right:20px;
+}
+
+.content-right .about-copy {
+    text-align: center;
+}
+
+.content-right .about-copy p{
+    line-height: 1.5rem;
+}
+
+/* End About */
+
+/* Section Service */
+
+
+.service .service-judul{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    background-color: var(--main-color);
+    font-family: var(--main-font);
+}
+
+.service .service-wrapper{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    font-family: var(--main-font);
+    padding: 10px;
+}
+
+.service-wrapper .daftar-service{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    position: relative;
+   
+}
+
+.daftar-service .card-service{
+    margin: 0px 10px 10px 20px;
+    align-items: center;
+    position: relative;
+    flex-wrap: wrap;
+    /* background-color: blue; */
+    border-radius: 20px;
+    max-width: 500px;
+    height: 400px;
+    overflow: hidden;
+}
+
+.daftar-service .card-service img{
+   max-width: 300px;
+   padding: 20px;
+}
+
+.daftar-service .card-service h3{
+    text-align: center;
+}
+
+.card-service .card-copy{
+    padding: 20px;
+    overflow: hidden;
+    max-width: 300px;
+    text-overflow: ellipsis;
+}
+
+.card-copy h3{
+    margin-bottom: 4px;
+}
+
+/* End Section Service */
+
+/* Bagian Testimonial */
+.testimoni{
+    height: auto;
+    margin: 40px;
+}
+
+.testimoni .testimoni-judul{
+    padding: 20px;
+    text-align: center;
+    background-color: var(--second-color);
+    font-family: var(--main-font);
+}
+
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  height: 300px;
+  background-color: var(--second-color);
+}
+
+.slideshow-container h3{
+    text-align: center;
+}
+/* Slide */
+.mySlides {
+  display: none;
+  padding: 20px;
+  text-align: center;
+}
+
+/* gambar testi */
+
+ .gambar-testi{
+    border-radius: 50%;
+     width: 100px;
+    padding-bottom: 20px;
+   
+}
+
+/* Prev dan Next Button */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -30px;
+  padding: 16px;
+  color: #888;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Posisi Next Button sebelah kanan */
+.next {
+  position: absolute;
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Hover ketika button ditekan */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+  color: white;
+}
+
+/* Indikator bulat */
+.dot-container {
+    text-align: center;
+    padding: 40px;
+    background: #F6D7A7
+}
+
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+/* menambahkan warna bulatan ketika ganti slide*/
+.active, .dot:hover {
+  background-color: #87AAAA;
+}
+
+/* membuat tulisan miring pada quote */
+q {font-style: italic;}
+
+/* menambahkan warna pada author */
+.author {color: #87AAAA;}
+
+/* End Testimoni */
+
+/* Bagian Pembuat */
+
+.pembuat .pembuat-wrapper{
+    background-color: var(--main-color);
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pembuat-wrapper .card-profil{
+    max-width: 300px;
+    margin: 20px 0 20px 0;
+    padding: 20px;
+    background-color: whitesmoke;
+    font-family: var(--main-font);
+    align-items: center;
+    align-content: center;
+    border-radius: 20px;
+}
+
+.card-profil .profil-img{
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    border: 1px dashed black;
+    border-radius: 20px;
+}
+
+.pembuat-wrapper .profil-img img{
+    width: 100%;
+    border-radius: 20px;
+   
+}
+
+.card-profil .profil-detail{
+    margin-top: 10px;
+    text-overflow: ellipsis;
+}
+
+.card-profil .profil-detail h3{
+    text-align: center;
+    margin: 10px;
+}
+
+.card-profil .profil-detail a{
+    text-decoration: none;
+    color: black;
+}
+
+/* Footer Section */
+.footer-wrapper{
+    background-color: var(--second-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-wrapper .content-left{
+    font-family: var(--heading-font);
+    font-size: larger;
+    color: black;
+    margin: 20px;
+}
+
+.footer-wrapper .content-right{
+    margin: 20px;
+    flex: 0 0 0 10%;
+}
+
+.content-right .menu-list{
+    list-style: none;
+    padding: 4px;
+}
+
+.content-right .menu-link{
+    text-decoration: none;
+    font-family: var(--main-font);
+    color: black;
+}
+
+.footer-wrapper .sponsor{
+    flex: 0 0 20%;
+    padding: 10px;
+    font-family: var(--main-font);
+}
+
+.sponsor .menu{
+    padding: 10px;
+    list-style: none;
+}
+
+.sponsor .menu-list{
+    list-style: none;
+    padding: 4px;
+}
+.sponsor .menu-link{
+    text-decoration: none;
+    color: black;
+    
+}
+
+
+
+
+footer .cr{
+    background-color: var(--second-color);
+    margin: 20px;
+    text-align: center;
+    font-size: 10px;
+    font-family: var(--main-font);
+    font-style: italic;
+}
+/* End Footer */
+
+
+@media screen and (max-width: 768px) {
+
+    /* Navbar */
+
+    .nav-wrapper .menu-wrapper{
+        position: absolute;
+        background-color: var(--second-color);
+        top: 100%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80%;
+        display: block;
+        text-align: center;
+        padding-bottom: 3rem;
+        border-radius: 0 0 10px 10px;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+        transition: .3s ease-in-out;
+    
+    }
+
+   .nav-wrapper .menu-wrapper .menu{
+        display: block;
+    }
+    
+    .nav-wrapper .menu-list{
+        display: block;
+    }
+    
+    .nav-wrapper .menu-toggle{
+        display: initial;
+        justify-content: center;
+        align-items: center;
+        font-size: 2rem;
+    }
+
+    .menu-toggle.bx-x{
+        transform: rotate(360deg);
+        transition: .5s;
+    }
+
+    .nav-wrapper .menu-wrapper.active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        transition: .3s ease-in-out;
+    }
+
+    .nav-wrapper .menu .active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+        transition: .3s ease-in-out;
+    }
+    
+    /* end Navbar */
+
+    .home .home-wrapper{
+        display: block;
+    }
+    
+    .about .about-wrapper{
+        display: block;
+    }
+
+    .service .service-wrapper{
+        align-content: center;
+        display: block;
+    }
+    .service .service-wrapper .daftar-service{
+        align-content: center;
+        display: block;
+    }
+}
